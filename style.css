@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.shopping-cart {
+    width: 60%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.cart-item:last-child{
+    border-bottom: none;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.quantity button:hover{
+    border-color: #333
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    margin: 0 5px;
+    outline: none;
+}
+
+.btn-like {
+    color: gray;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-like.liked {
+    color: red;
+}
+
+.btn-like:hover{
+    color: #ff4757;
+}
+
+.btn-delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-delete:hover{
+transform: scale(1.1);
+color: #b71c1c
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.total p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#total-price{
+    color: #333;
+}
